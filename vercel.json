@@ -1,4 +1,10 @@
 {
+    "build": {
+  "commands": [
+    "apt-get update",
+    "apt-get install -y libssl1.0.0"
+  ]
+},
     "version": 2,
     "functions": {
         "api/index.php": {

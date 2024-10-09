@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    /* background-image: url(../images/balai.jpeg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+    width: 100%;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.dropProfile{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    display: none;
+}
+
+.dropProfile li{
+    width: 180x;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .dropProfile ul{
+    height: fit-content;
+} */
+
+.dropProfile li:hover{
+    background-color: #333;
+    color: white;
+}
+
+
+nav li{
+    height: 80px;
+}
+
+nav ul li:hover .dropProfile {
+    display: block;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    background-color: #333;
+    color: white;
+}
+
+/* nav li:first-child{
+    margin-right: auto;
+} */
+
+.logo{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.712);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 5px rgb(129, 129, 129);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    color: black;
+}
+
+.menuButton{
+    display: none;
+}
+/* .hideOnMobile{
+    margin-left: auto;
+} */
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+.history, .potential, .activities, .news {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+/* .welcome {
+    background: #ecf0f1;
+    text-align: center; 
+    height: 1390px;
+    background-image: url(../images/balai.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:multiply;
+    padding-top: 0px;
+}    */
+
+
+.history, .potential, .activities, .news {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container h1{
+    font-size: 50px;
+}
+
+.container p{
+   font-size: 20px;
+}
+.hero {
+    text-align: center;
+    background-image: url(../images/balai.jpeg);
+    background-size: cover;
+    color: #fff;
+    padding: 200px 0;
+    background-position: center;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 20px;
+}

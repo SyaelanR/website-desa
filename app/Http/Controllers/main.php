@@ -7,14 +7,16 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 class main extends Controller
 {
-    public function dashboard()
-    {
-        return view('dashboardguru');
+    public function dashboard(){
+        return view('dashboard');
     }
 
-    public function tes()
-    {
-        return view(view: 'dashboard'); 
+    public function visiMisi(){
+        return view(view: 'visiMisi');
+    }
+
+    public function tes(){
+        return view(view: 'tes'); 
     }
 
 }
